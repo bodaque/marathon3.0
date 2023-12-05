@@ -1,11 +1,29 @@
 package com.epam.marathon.auto.core.ui;
 
 import com.epam.marathon.auto.core.BASE_URI;
+
+public enum BASE_URI {
+    UI(""),
+    API("");
+
+    private String uri;
+    BASE_URI(String uri) {
+        this.uri = uri;
+    }
+
+    public String getUri() {
+        return uri;
+    }
+
+    public void setUri(String uri) {
+        this.uri = uri;
+    }
+}
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterMethod;
-
 import java.time.Duration;
 import java.time.temporal.ChronoUnit;
 
