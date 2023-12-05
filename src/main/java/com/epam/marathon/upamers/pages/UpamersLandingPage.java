@@ -1,6 +1,19 @@
 package com.epam.marathon.upamers.pages;
 
 import com.epam.marathon.upamers.pages.widgets.UpamersContactsWidget;
+
+public class UpamersContactsWidget extends UpamersBasePage {
+
+    @FindBy(css = "li.contact-list__item")
+    private List<WebElement> contactsList;
+
+
+    public List<WebElement> getContactsList() {
+        return contactsList;
+    }
+
+}
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

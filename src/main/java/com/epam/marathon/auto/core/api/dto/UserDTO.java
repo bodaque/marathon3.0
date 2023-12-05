@@ -2,7 +2,6 @@ package com.epam.marathon.auto.core.api.dto;
 
 import jakarta.xml.bind.annotation.XmlAttribute;
 import jakarta.xml.bind.annotation.XmlRootElement;
-
 import java.util.Arrays;
 
 @XmlRootElement
